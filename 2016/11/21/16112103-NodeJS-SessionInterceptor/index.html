@@ -6,26 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>MD5（JS加密插件） | BenBen的博客</title>
+  <title>SESSION和拦截器的DEMO（NodeJS） | BenBen的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用方法
-123&amp;lt;script src=&quot;js/hashc.jsg&quot;&amp;gt;&amp;lt;/script&amp;gt;var hashobj = new Hash_txt();hashobj.$MD5(pwdVal)
-DEMO1hashobj.$MD5(&quot;123456&quot;) //&quot;e10adc3949ba59abbe56e057f20f883e&quot;
+  <meta name="description" content="说明一个NodeJS的项目。一个关于SESSION和拦截器的DEMO。这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。
+使用方法123安装组建：npm install启动node：node app.js进行访问：http://localhost:3000
 下载地址">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MD5（JS加密插件）">
-<meta property="og:url" content="http://yoursite.com/2016/11/21/16-11-21-02-MD5/index.html">
+<meta property="og:title" content="SESSION和拦截器的DEMO（NodeJS）">
+<meta property="og:url" content="http://yoursite.com/2016/11/21/16112103-NodeJS-SessionInterceptor/index.html">
 <meta property="og:site_name" content="BenBen的博客">
-<meta property="og:description" content="使用方法
-123&amp;lt;script src=&quot;js/hashc.jsg&quot;&amp;gt;&amp;lt;/script&amp;gt;var hashobj = new Hash_txt();hashobj.$MD5(pwdVal)
-DEMO1hashobj.$MD5(&quot;123456&quot;) //&quot;e10adc3949ba59abbe56e057f20f883e&quot;
+<meta property="og:description" content="说明一个NodeJS的项目。一个关于SESSION和拦截器的DEMO。这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。
+使用方法123安装组建：npm install启动node：node app.js进行访问：http://localhost:3000
 下载地址">
-<meta property="og:updated_time" content="2016-11-21T13:16:04.000Z">
+<meta property="og:updated_time" content="2016-11-21T13:22:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MD5（JS加密插件）">
-<meta name="twitter:description" content="使用方法
-123&amp;lt;script src=&quot;js/hashc.jsg&quot;&amp;gt;&amp;lt;/script&amp;gt;var hashobj = new Hash_txt();hashobj.$MD5(pwdVal)
-DEMO1hashobj.$MD5(&quot;123456&quot;) //&quot;e10adc3949ba59abbe56e057f20f883e&quot;
+<meta name="twitter:title" content="SESSION和拦截器的DEMO（NodeJS）">
+<meta name="twitter:description" content="说明一个NodeJS的项目。一个关于SESSION和拦截器的DEMO。这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。
+使用方法123安装组建：npm install启动node：node app.js进行访问：http://localhost:3000
 下载地址">
   
   
@@ -141,7 +138,7 @@ DEMO1hashobj.$MD5(&quot;123456&quot;) //&quot;e10adc3949ba59abbe56e057f20f883e&q
 </nav>
 
       <div class="body-wrap">
-        <article id="post-16-11-21-02-MD5" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-16112103-NodeJS-SessionInterceptor" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -151,7 +148,7 @@ DEMO1hashobj.$MD5(&quot;123456&quot;) //&quot;e10adc3949ba59abbe56e057f20f883e&q
         
   
     <h1 class="article-title" itemprop="name">
-      MD5（JS加密插件）
+      SESSION和拦截器的DEMO（NodeJS）
     </h1>
   
 
@@ -159,22 +156,21 @@ DEMO1hashobj.$MD5(&quot;123456&quot;) //&quot;e10adc3949ba59abbe56e057f20f883e&q
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><hr>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"js/hashc.jsg"</span>&gt;&lt;/script&gt;</div><div class="line"><span class="keyword">var</span> hashobj = <span class="keyword">new</span> Hash_txt();</div><div class="line">hashobj.$MD5(pwdVal)</div></pre></td></tr></table></figure>
-<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hashobj.$MD5(<span class="string">"123456"</span>) <span class="comment">//"e10adc3949ba59abbe56e057f20f883e"</span></div></pre></td></tr></table></figure>
-<p><a href="https://github.com/thejinjin/JavaScript/tree/master/MD5" target="_blank" rel="external">下载地址</a></p>
+        <h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>一个NodeJS的项目。<br>一个关于SESSION和拦截器的DEMO。<br>这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。</p>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">安装组建：npm install</div><div class="line">启动node：node app.js</div><div class="line">进行访问：http://localhost:3000</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/thejinjin/NodeJS/tree/master/SessionInterceptor-DEMO" target="_blank" rel="external">下载地址</a></p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/11/21/16-11-21-02-MD5/" class="archive-article-date">
-  	<time datetime="2016-11-21T06:36:53.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-21</time>
+      <a href="/2016/11/21/16112103-NodeJS-SessionInterceptor/" class="archive-article-date">
+  	<time datetime="2016-11-21T13:18:09.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-21</time>
 </a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源/">开源</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NodeJS/">NodeJS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源/">开源</a></li></ul>
 	</div>
 
       
@@ -187,18 +183,9 @@ DEMO1hashobj.$MD5(&quot;123456&quot;) //&quot;e10adc3949ba59abbe56e057f20f883e&q
   
 <nav id="article-nav">
   
-    <a href="/2016/11/21/16-11-21-03-NodeJS-SessionInterceptor/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          SESSION和拦截器的DEMO（NodeJS）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/11/21/16-11-21-01-JWonder/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">前端开发库（JWonder）</div>
+    <a href="/2016/11/21/16112102-MD5/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MD5（JS加密插件）</div>
       <i class="icon-circle-right"></i>
     </a>
   
