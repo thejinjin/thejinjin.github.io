@@ -6,21 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>前端开发库（JWonder） | BenBen的博客</title>
+  <title>SESSION和拦截器的DEMO（NodeJS） | BenBen的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="概要
-JWonder核心使用全局对象JWonder进行访问，也可简化为$符，为了保持与Jquery的兼容，当Jquery被加载时，核心对象简化使用 $ 。如果要让JWonder和JQuery混用，请让JWonder的加载时间晚于JQuery加载。下载地址">
+  <meta name="description" content="说明一个NodeJS的项目。一个关于SESSION和拦截器的DEMO。这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。
+使用方法123安装组建：npm install启动node：node app.js进行访问：http://localhost:3000
+下载地址">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端开发库（JWonder）">
-<meta property="og:url" content="http://yoursite.com/2016/11/21/16-11-21-01-JWonder/index.html">
+<meta property="og:title" content="SESSION和拦截器的DEMO（NodeJS）">
+<meta property="og:url" content="http://yoursite.com/2016/11/21/16-11-21-03-NodeJS-SessionInterceptor/index.html">
 <meta property="og:site_name" content="BenBen的博客">
-<meta property="og:description" content="概要
-JWonder核心使用全局对象JWonder进行访问，也可简化为$符，为了保持与Jquery的兼容，当Jquery被加载时，核心对象简化使用 $ 。如果要让JWonder和JQuery混用，请让JWonder的加载时间晚于JQuery加载。下载地址">
-<meta property="og:updated_time" content="2016-11-21T13:15:57.000Z">
+<meta property="og:description" content="说明一个NodeJS的项目。一个关于SESSION和拦截器的DEMO。这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。
+使用方法123安装组建：npm install启动node：node app.js进行访问：http://localhost:3000
+下载地址">
+<meta property="og:updated_time" content="2016-11-21T13:22:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端开发库（JWonder）">
-<meta name="twitter:description" content="概要
-JWonder核心使用全局对象JWonder进行访问，也可简化为$符，为了保持与Jquery的兼容，当Jquery被加载时，核心对象简化使用 $ 。如果要让JWonder和JQuery混用，请让JWonder的加载时间晚于JQuery加载。下载地址">
+<meta name="twitter:title" content="SESSION和拦截器的DEMO（NodeJS）">
+<meta name="twitter:description" content="说明一个NodeJS的项目。一个关于SESSION和拦截器的DEMO。这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。
+使用方法123安装组建：npm install启动node：node app.js进行访问：http://localhost:3000
+下载地址">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -135,7 +138,7 @@ JWonder核心使用全局对象JWonder进行访问，也可简化为$符，为�
 </nav>
 
       <div class="body-wrap">
-        <article id="post-16-11-21-01-JWonder" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-16-11-21-03-NodeJS-SessionInterceptor" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -145,7 +148,7 @@ JWonder核心使用全局对象JWonder进行访问，也可简化为$符，为�
         
   
     <h1 class="article-title" itemprop="name">
-      前端开发库（JWonder）
+      SESSION和拦截器的DEMO（NodeJS）
     </h1>
   
 
@@ -153,22 +156,21 @@ JWonder核心使用全局对象JWonder进行访问，也可简化为$符，为�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h1><hr>
-<p>JWonder核心使用全局对象<em>JWonder进行访问，也可简化为$符，为了保持与Jquery的兼容，当Jquery被加载时，核心对象简化使用 </em>$ 。<br>如果要让JWonder和JQuery混用，请让JWonder的加载时间晚于JQuery加载。<br><a href="https://github.com/thejinjin/JavaScript/tree/master/JWonder" target="_blank" rel="external">下载地址</a><br><a id="more"></a></p>
-<h1 id="使用说明书"><a href="#使用说明书" class="headerlink" title="使用说明书"></a>使用说明书</h1><h5 id="1、导出方法"><a href="#1、导出方法" class="headerlink" title="1、导出方法"></a>1、导出方法</h5><p>1-1：addLoad()<br>说明：页面初始化执行的Load<br>1-2：each()<br>说明：合并枚举多个对象和列表<br>1-3：eachLis()<br>说明：枚举一个列表<br>1-4：eachObj()<br>说明：枚举一个对象的属性<br>1-5：eval()<br>说明：求解Javascript表达式字符串<br>1-6：exception()<br>说明：触发一个自定义异常<br>1-7：isDef()<br>说明：判断变量是否定义<br>1-8：isNull()<br>说明：判断变量是否为空<br>1-9：listarg()<br>说明：整理合并多个对象和列表为一个列表<br>1-10：loop()<br>说明：执行循环惰性求值<br>1-11：range()<br>说明：构造一个整数范围迭代器<br>1-12：shallowCopy()<br>说明：对对象执行浅拷贝<br>1-13：addCommand()<br>说明：(语法移植API）向命令函数列表内添加一个新的项目<br>1-14：filter()<br>说明：(语法移植API）匹配传入命令对象，触发一个命令函数执行 </p>
-<h5 id="2、属性"><a href="#2、属性" class="headerlink" title="2、属性"></a>2、属性</h5><p>2-1：Client<br>说明：浏览器信息<br>2-2：wonderTag<br>说明：对象的唯一类型标识 </p>
+        <h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>一个NodeJS的项目。<br>一个关于SESSION和拦截器的DEMO。<br>这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。</p>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">安装组建：npm install</div><div class="line">启动node：node app.js</div><div class="line">进行访问：http://localhost:3000</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/thejinjin/NodeJS/tree/master/SessionInterceptor-DEMO" target="_blank" rel="external">下载地址</a></p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/11/21/16-11-21-01-JWonder/" class="archive-article-date">
-  	<time datetime="2016-11-21T06:21:01.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-21</time>
+      <a href="/2016/11/21/16-11-21-03-NodeJS-SessionInterceptor/" class="archive-article-date">
+  	<time datetime="2016-11-21T13:18:09.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-21</time>
 </a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源/">开源</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NodeJS/">NodeJS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源/">开源</a></li></ul>
 	</div>
 
       
@@ -181,18 +183,9 @@ JWonder核心使用全局对象JWonder进行访问，也可简化为$符，为�
   
 <nav id="article-nav">
   
-    <a href="/2016/11/21/16-11-21-02-MD5/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MD5（JS加密插件）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/11/21/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2016/11/21/16-11-21-02-MD5/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MD5（JS加密插件）</div>
       <i class="icon-circle-right"></i>
     </a>
   
