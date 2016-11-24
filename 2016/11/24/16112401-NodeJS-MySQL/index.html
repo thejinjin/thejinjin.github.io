@@ -12,9 +12,7 @@
 安装mysql模块 npm -install -g node-mysql 
 
 创建
-创建一个名为mysql.js的文件
-
-12345678910111213141516171819202122232425//复制代码var mysql=require(&quot;mysql&quot;);var pool = mysql.createPool(&amp;#123;      host: &apos;localhost&apos;,">
+创建一个名为mysql.js的文件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nodejs连接Mysql">
 <meta property="og:url" content="http://yoursite.com/2016/11/24/16112401-NodeJS-MySQL/index.html">
@@ -23,19 +21,15 @@
 安装mysql模块 npm -install -g node-mysql 
 
 创建
-创建一个名为mysql.js的文件
-
-12345678910111213141516171819202122232425//复制代码var mysql=require(&quot;mysql&quot;);var pool = mysql.createPool(&amp;#123;      host: &apos;localhost&apos;,">
-<meta property="og:updated_time" content="2016-11-24T14:06:45.000Z">
+创建一个名为mysql.js的文件">
+<meta property="og:updated_time" content="2016-11-24T14:16:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nodejs连接Mysql">
 <meta name="twitter:description" content="准备
 安装mysql模块 npm -install -g node-mysql 
 
 创建
-创建一个名为mysql.js的文件
-
-12345678910111213141516171819202122232425//复制代码var mysql=require(&quot;mysql&quot;);var pool = mysql.createPool(&amp;#123;      host: &apos;localhost&apos;,">
+创建一个名为mysql.js的文件">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -172,7 +166,7 @@
 <p>安装mysql模块 npm -install -g node-mysql </p>
 </blockquote>
 <h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><blockquote>
-<p>创建一个名为mysql.js的文件</p>
+<p>创建一个名为mysql.js的文件<br><a id="more"></a></p>
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//复制代码</span></div><div class="line"><span class="keyword">var</span> mysql=<span class="built_in">require</span>(<span class="string">"mysql"</span>);</div><div class="line"><span class="keyword">var</span> pool = mysql.createPool(&#123;  </div><div class="line">    <span class="attr">host</span>: <span class="string">'localhost'</span>,  </div><div class="line">    <span class="attr">user</span>: <span class="string">'user'</span>,  </div><div class="line">    <span class="attr">password</span>: <span class="string">'password'</span>,  </div><div class="line">    <span class="attr">database</span>: <span class="string">'database'</span>,  </div><div class="line">    <span class="attr">port</span>: port  </div><div class="line">&#125;);</div><div class="line"><span class="comment">//执行语句</span></div><div class="line"><span class="keyword">var</span> query=<span class="function"><span class="keyword">function</span>(<span class="params">sql,callback</span>)</span>&#123;  </div><div class="line">    pool.getConnection(<span class="function"><span class="keyword">function</span>(<span class="params">err,conn</span>)</span>&#123;  </div><div class="line">        <span class="keyword">if</span>(err)&#123;  </div><div class="line">            callback(err,<span class="literal">null</span>,<span class="literal">null</span>);  </div><div class="line">        &#125;<span class="keyword">else</span>&#123;  </div><div class="line">            conn.query(sql,<span class="function"><span class="keyword">function</span>(<span class="params">qerr,vals,fields</span>)</span>&#123;  </div><div class="line">                <span class="comment">//释放连接  </span></div><div class="line">                conn.release();  </div><div class="line">                <span class="comment">//事件驱动回调  </span></div><div class="line">                callback(qerr,vals,fields);  </div><div class="line">            &#125;);  </div><div class="line">        &#125;  </div><div class="line">    &#125;);  </div><div class="line">&#125;; </div><div class="line"><span class="built_in">module</span>.exports=query;</div></pre></td></tr></table></figure>
 <h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><blockquote>
