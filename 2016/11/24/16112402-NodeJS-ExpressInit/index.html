@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>BenBen的博客</title>
+  <title>NodeJs创建项目Express | BenBen的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="就职于某动力系统公司。负责能源联网项目，擅长网络通信，车联网及各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="BenBen的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="基础123456789101112131415161718//使用项目安装包创建项目: express -e dir //(dir为项目名称)//-e, --ejs add ejs engine support //-J, --jshtml add jshtml engine support (defaults to jade)//使用下边的命令初始化npm install //启动项目，测试包是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NodeJs创建项目Express">
+<meta property="og:url" content="http://yoursite.com/2016/11/24/16112402-NodeJS-ExpressInit/index.html">
 <meta property="og:site_name" content="BenBen的博客">
-<meta property="og:description" content="就职于某动力系统公司。负责能源联网项目，擅长网络通信，车联网及各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。">
+<meta property="og:description" content="基础123456789101112131415161718//使用项目安装包创建项目: express -e dir //(dir为项目名称)//-e, --ejs add ejs engine support //-J, --jshtml add jshtml engine support (defaults to jade)//使用下边的命令初始化npm install //启动项目，测试包是">
+<meta property="og:updated_time" content="2016-11-24T14:13:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BenBen的博客">
-<meta name="twitter:description" content="就职于某动力系统公司。负责能源联网项目，擅长网络通信，车联网及各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。">
+<meta name="twitter:title" content="NodeJs创建项目Express">
+<meta name="twitter:description" content="基础123456789101112131415161718//使用项目安装包创建项目: express -e dir //(dir为项目名称)//-e, --ejs add ejs engine support //-J, --jshtml add jshtml engine support (defaults to jade)//使用下边的命令初始化npm install //启动项目，测试包是">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -131,9 +132,7 @@
 </nav>
 
       <div class="body-wrap">
-        
-  
-    <article id="post-16112402-NodeJS-ExpressInit" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-16112402-NodeJS-ExpressInit" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -142,8 +141,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/24/16112402-NodeJS-ExpressInit/">NodeJs创建项目Express</a>
+    <h1 class="article-title" itemprop="name">
+      NodeJs创建项目Express
     </h1>
   
 
@@ -181,285 +180,44 @@
   </div>
 </article>
 
-
-
-
-
-
-
-
-
-
   
-    <article id="post-16112401-NodeJS-MySQL" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/24/16112401-NodeJS-MySQL/">Nodejs连接Mysql</a>
-    </h1>
   
+    <a href="/2016/11/24/16112401-NodeJS-MySQL/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Nodejs连接Mysql</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><blockquote>
-<p>安装mysql模块 npm -install -g node-mysql </p>
-</blockquote>
-<h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><blockquote>
-<p>创建一个名为mysql.js的文件</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//复制代码</span></div><div class="line"><span class="keyword">var</span> mysql=<span class="built_in">require</span>(<span class="string">"mysql"</span>);</div><div class="line"><span class="keyword">var</span> pool = mysql.createPool(&#123;  </div><div class="line">    <span class="attr">host</span>: <span class="string">'localhost'</span>,  </div><div class="line">    <span class="attr">user</span>: <span class="string">'user'</span>,  </div><div class="line">    <span class="attr">password</span>: <span class="string">'password'</span>,  </div><div class="line">    <span class="attr">database</span>: <span class="string">'database'</span>,  </div><div class="line">    <span class="attr">port</span>: port  </div><div class="line">&#125;);</div><div class="line"><span class="comment">//执行语句</span></div><div class="line"><span class="keyword">var</span> query=<span class="function"><span class="keyword">function</span>(<span class="params">sql,callback</span>)</span>&#123;  </div><div class="line">    pool.getConnection(<span class="function"><span class="keyword">function</span>(<span class="params">err,conn</span>)</span>&#123;  </div><div class="line">        <span class="keyword">if</span>(err)&#123;  </div><div class="line">            callback(err,<span class="literal">null</span>,<span class="literal">null</span>);  </div><div class="line">        &#125;<span class="keyword">else</span>&#123;  </div><div class="line">            conn.query(sql,<span class="function"><span class="keyword">function</span>(<span class="params">qerr,vals,fields</span>)</span>&#123;  </div><div class="line">                <span class="comment">//释放连接  </span></div><div class="line">                conn.release();  </div><div class="line">                <span class="comment">//事件驱动回调  </span></div><div class="line">                callback(qerr,vals,fields);  </div><div class="line">            &#125;);  </div><div class="line">        &#125;  </div><div class="line">    &#125;);  </div><div class="line">&#125;; </div><div class="line"><span class="built_in">module</span>.exports=query;</div></pre></td></tr></table></figure>
-<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><blockquote>
-<p>把下方代码复制到启动文件后运行即可</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> query=<span class="built_in">require</span>(<span class="string">"./lib/mysql.js"</span>);</div><div class="line"></div><div class="line">query(<span class="string">"select 1 from 1"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">err,vals,fields</span>)</span>&#123;  </div><div class="line">    <span class="comment">//do something  </span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/24/16112401-NodeJS-MySQL/" class="archive-article-date">
-  	<time datetime="2016-11-24T12:52:35.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-24</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NodeJS/">NodeJS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据库/">数据库</a></li></ul>
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-      
 
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
 
 
 
 
 
-
-
-
-
-
-  
-    <article id="post-16112103-NodeJS-SessionInterceptor" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/21/16112103-NodeJS-SessionInterceptor/">SESSION和拦截器的DEMO（NodeJS）</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>一个NodeJS的项目。<br>一个关于SESSION和拦截器的DEMO。<br>这个DEMO只是提供了一个思路，欢迎大家进行扩展和讨论。</p>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">安装组建：npm install</div><div class="line">启动node：node app.js</div><div class="line">进行访问：http://localhost:3000</div></pre></td></tr></table></figure>
-<p><a href="https://github.com/thejinjin/NodeJS/tree/master/SessionInterceptor-DEMO" target="_blank" rel="external">下载地址</a></p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/21/16112103-NodeJS-SessionInterceptor/" class="archive-article-date">
-  	<time datetime="2016-11-21T13:18:09.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-21</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NodeJS/">NodeJS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源/">开源</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-16112102-MD5" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/21/16112102-MD5/">MD5（JS加密插件）</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><hr>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"js/hashc.jsg"</span>&gt;&lt;/script&gt;</div><div class="line"><span class="keyword">var</span> hashobj = <span class="keyword">new</span> Hash_txt();</div><div class="line">hashobj.$MD5(pwdVal)</div></pre></td></tr></table></figure>
-<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hashobj.$MD5(<span class="string">"123456"</span>) <span class="comment">//"e10adc3949ba59abbe56e057f20f883e"</span></div></pre></td></tr></table></figure>
-<p><a href="https://github.com/thejinjin/JavaScript/tree/master/MD5" target="_blank" rel="external">下载地址</a></p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/21/16112102-MD5/" class="archive-article-date">
-  	<time datetime="2016-11-21T06:36:53.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-21</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源/">开源</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-16112101-JWonder" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/21/16112101-JWonder/">前端开发库（JWonder）</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h1><hr>
-<p>JWonder核心使用全局对象<em>JWonder进行访问，也可简化为$符，为了保持与Jquery的兼容，当Jquery被加载时，核心对象简化使用 </em>$ 。<br>如果要让JWonder和JQuery混用，请让JWonder的加载时间晚于JQuery加载。<br><a href="https://github.com/thejinjin/JavaScript/tree/master/JWonder">下载地址</a><br>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/11/21/16112101-JWonder/#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/21/16112101-JWonder/" class="archive-article-date">
-  	<time datetime="2016-11-21T06:21:01.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-21</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源/">开源</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/21/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a><br>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/11/21/hello-world/#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/21/hello-world/" class="archive-article-date">
-  	<time datetime="2016-11-21T03:29:12.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-21</time>
-</a>
-      
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-  
 
 
       </div>
@@ -481,8 +239,8 @@
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
